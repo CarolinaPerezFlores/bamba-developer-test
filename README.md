@@ -1,17 +1,25 @@
 ## Bamba Developer Test
 ## DEMO:
+![Alt Text](resources\imgs\demo.gif)
 
 ### Preguntas a responder:
 
-- ¿Que mejoras hubieses implementado si fuese un proyecto "de la vida real"?
+- Mejoras en 'La vida real':  
+Cifrar token que generé para listar el booking.  
+Agregar más películas, diferentes funciones.  
+Crear una vista para consultar el booking.
 
 
 
-- Si se incluye un cátalogo de películas y cada sala muestra distintas películas ¿qué cambios en el diseño de la base de datos y lógica de negocio tendrías que implementar?
+
+
+- Cambios para mostrar diferentes películas:  
+Crearía el modelo 'Película', haría haría una relación belongsTo hacia el modelo Booking.
 
 
 
-- ¿Cómo evitarias que dos usuarios agenden el mismo asiento en la misma sala para el mismo horario?
+- ¿Cómo evitar que dos usuarios agenden el mismo asiento en la misma sala para el mismo horario?  
+Al momento de traer los asientos específicos de cada sala, consultaría los id´s de cada haciento agendado (booking). Después de compararlos, adjuntaría un estatus en en número de haciento de la sala, en la respueta del request.
 
 
 
